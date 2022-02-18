@@ -1,0 +1,25 @@
+list1 = []
+list2 = []
+statement = 1
+
+# a function that prints out the lists as a set, seperating each peice of data inputed
+def function(mylist):
+    print(list(set(list1)-set(list2)))
+
+# adds the input message for the user to input data
+
+while statement == 1:
+    num1 = input("Enter seperated-spaced numbers: ")
+    num2 = input("Enter seperated-spaced numbers: ")
+
+    if len(num1) == 0:
+        statement = 0
+
+# splits the lists calls the function mylist
+    list1.extend(num1.split())
+    list2.extend(num2.split())
+    function(list1)
+    
+    # resets the list to conduct another test
+    list1 = []
+    list2 = []
