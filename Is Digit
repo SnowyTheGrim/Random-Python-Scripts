@@ -1,0 +1,24 @@
+def textisdigit():
+
+    statement = 1
+    count = 0
+
+    while statement == 1:
+
+        text = input("Enter a string: ")
+        temp = list(text)
+
+        for i in temp:
+
+            if(i.isdigit()):
+                count = count + 1
+            else:
+                pass
+
+        if count > 0:
+            print("Has Digit: True")
+            count = 0
+        else:
+            print("Has Digit: False")
+
+textisdigit()
