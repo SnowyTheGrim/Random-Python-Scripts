@@ -1,0 +1,9 @@
+size = int(input("How many lines do you want?"))
+spaces = (2 * size)
+for i in range(0, size):
+    for j in range(0, spaces):
+        print(end=" ")
+    spaces = spaces - 1
+    for j in range(0, i + 1):
+        print("#", end=' ')
+    print(" ")
