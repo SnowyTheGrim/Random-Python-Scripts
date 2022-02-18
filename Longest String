@@ -1,0 +1,17 @@
+longest = 0
+start = 1
+statement = 1
+
+
+while statement == 1:
+
+        string = input("Enter a string: ")
+        length = len(string)
+
+        if  length > longest:
+            longest = length
+            text = string
+
+        if string == "":
+            print ("Longest was: ", text)
+            statement = 0
