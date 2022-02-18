@@ -1,0 +1,56 @@
+import math
+
+
+statement = 1
+carpet = 3.66
+
+
+
+
+while statement == 1:
+
+    Room1 =float (input("Enter room dimension 1 (m): "))
+    Room2 =float (input("Enter room dimension 2 (m): "))
+
+    if Room1 <= 0:
+        break
+    if Room2 <= 0:
+        break
+
+    if Room1 > Room2:
+        Length =  Room1
+        Width  =  Room2
+
+        print ("Length = {:.3f}".format(Length),"m")
+        print ("Width  = {:.3f}".format(Width), "m")
+
+        t1 = Length / carpet
+        t2 = math.ceil(t1)
+        t3 =(Width * t2)
+
+        t4 = Width / carpet
+        t5 = math.ceil(t4)
+        t6 =(Length * t5)
+
+        print("Total length required Length ways = ", math.ceil(t6), "m")
+        print ("Total length required Width ways = ", math.ceil(t3), "m")
+
+
+
+    else:
+        Length = Room2
+        Width = Room1
+
+        print("Length = {:.3f}".format(Length), "m")
+        print("Width =  {:.3f}".format(Width), "m")
+
+        t1 = Length / carpet
+        t2 = math.ceil(t1)
+        t3 =(Width * t2)
+
+        t4 = Width / carpet
+        t5 = math.ceil(t4)
+        t6 =(Length * t5)
+
+        print("Total length required Length ways = ", math.ceil(t6), "m")
+        print ("Total length required Width ways = ", math.ceil(t3), "m")
