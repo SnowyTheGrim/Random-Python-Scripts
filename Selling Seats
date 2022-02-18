@@ -1,0 +1,24 @@
+seats = 100
+SL = 1
+
+
+while  SL == 1:
+
+# first statement checks if seats are equal to 0, if not it will ask the user if he would like to buy some seats
+
+    if seats == 0:
+        print("Seats sold out!")
+        SL = 0
+        break
+    else:
+        print("Seats remaining: ", seats)
+        take = int(input("How many seats would you like to buy?"))
+
+
+# second if statement deals with the computation of adding and removing seats
+
+    if take <= seats:
+        print("Booked, thank you")
+        seats = seats - take
+    else:
+        print("Sorry, not enough seats left.")
